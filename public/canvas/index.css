@@ -1,0 +1,25 @@
+.col {
+    float: left;
+}
+
+.col-20 {
+    float: left;
+    width: 19%;
+}
+
+.col-40 {
+    float: left;
+    width: 39%;
+}
+
+.row {
+    clear: both;
+}
+
+.border-thin {
+   border-width: 1px;
+   border-style: solid;
+   border-color: black;
+}
+
+
