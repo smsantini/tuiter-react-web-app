@@ -1,0 +1,92 @@
+.wd-title-size-20{
+    font-size: 20px;
+}
+
+.wd-name-size-15{
+    font-size: 15px;
+}
+
+.wd-border-grey-bottom{
+    border-bottom: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.wd-comment{
+    filter: invert(50%);
+    width: 19px;
+    height: 18px;
+}
+
+.wd-retuit{
+    filter: invert(50%);
+    width: 23px;
+    height: 18px;
+}
+
+.wd-heart{
+    width: 18px;
+    height: 18px;
+}
+
+.wd-share{
+    filter: invert(50%);
+    width: 18px;
+    height: 18px;
+}
+
+.wd-fg-color-red{
+    color: red;
+}
+
+.wd-title-padding{
+    padding: 12px 16px 12px 16px;
+}
+
+.wd-padding-12{
+    padding: 12px;
+}
+
+.wd-margin-left{
+    margin-left: 12px;
+}
+
+.wd-margin-top{
+    margin-top: 12px;
+}
+
+.wd-round-corners{
+    border-radius: 20px;
+}
+
+.wd-round-corners-bottom{
+    border-radius: 0 0 20px 20px;
+}
+
+.wd-custom-content-size{
+    max-width: 506px;
+}
+
+.wd-grid-display{
+    display: grid;
+    grid-template-columns: 48px minmax(auto, 520px);
+}
+
+.wd-avatar{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    grid: inherit;
+}
+
+.wd-content-image{
+    width: 504px;
+    height: 264px;
+    border-radius: 20px 20px 0 0;
+}
+
+.wd-icon-sizing{
+    float: left;
+    width: 23%;
+}
+
