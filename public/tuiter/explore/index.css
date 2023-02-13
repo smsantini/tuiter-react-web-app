@@ -12,11 +12,15 @@
     border-radius: 0 30px 30px 0;
 }
 
-.wd-search-bar{
-    width: 80%;
-    float: left;
-    height: 24px;
-    border-width: 0;
+.wd-search-bar-left{
+    border-radius: 20px 0 0 20px;
+    border-right-width: 0 1px 1px 1px;
+}
+
+.wd-search-bar-right{
+    border-radius: 0 20px 20px 0;
+    border-width: 1px 1px 1px 0;
+    -webkit-appearance:none;
 }
 
 .wd-magnifying-glass{
@@ -45,4 +49,26 @@
     width: 100px;
     height: 100px;
     border-radius: 15px;
+}
+
+.wd-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.wd-col-1{
+    float: left;
+    width: 20%;
+}
+
+.wd-col-2{
+    float: left;
+    width: 50px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.wd-col-3{
+    float: right;
+    z-index: auto;
 }

@@ -14,6 +14,10 @@
     color: rgb(110, 118, 125);
 }
 
+.wd-font-size-15{
+    font-size: 15px;
+}
+
 .wd-border-grey{
     border-color: rgb(47, 51, 54);
     border-style: solid;
