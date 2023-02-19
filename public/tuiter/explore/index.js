@@ -1,4 +1,4 @@
-import NavigationSidebar from "NavigationSidebar";
+import NavigationSidebar from "/NavigationSidebar";
 
 function exploreComponentFull() {
     $('#wd-explore').append(`
