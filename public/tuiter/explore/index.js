@@ -1,7 +1,3 @@
-import navigationSidebar from "./NavigationSidebar";
-import whoToFollowList from "./WhoToFollowList";
-import exploreComponent from "./ExploreScreen";
-
 function exploreComponentFull() {
     $('#wd-explore').append(`
         <h2>Explore</h2>
@@ -22,6 +18,9 @@ function exploreComponentFull() {
 exploreComponentFull();
 
 /*
+import navigationSidebar from "./NavigationSidebar";
+import whoToFollowList from "./WhoToFollowList";
+import exploreComponent from "./ExploreScreen";
 ${navigationSidebar()}
 ${exploreComponent()}
 ${whoToFollowList()}
