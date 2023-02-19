@@ -2,7 +2,7 @@ import WhoToFollowListItem from "./WhoToFollowListItem.js";
 import who from "./who.js"
 const WhoToFollowList = () => {
     return(`
-        <ul>
+        <div class="list-group">
             <li class="list-group-item p-1 ps-2">
                 <b>Who to follow</b>
             </li>
@@ -11,7 +11,7 @@ const WhoToFollowList = () => {
                     return(WhoToFollowListItem(who));
                 }).join('')
             }
-        </ul>
+        </div>
    `);
 }
 
