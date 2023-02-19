@@ -2,7 +2,7 @@ import navigationSidebar from "./NavigationSidebar";
 import whoToFollowList from "./WhoToFollowList";
 import exploreComponent from "./ExploreScreen";
 
-function exploreComponent() {
+function exploreComponentFull() {
     $('#wd-explore').append(`
         <h2>Explore</h2>
         <div class="row mt-2">
@@ -22,4 +22,4 @@ function exploreComponent() {
    `);
 }
 
-exploreComponent();
+exploreComponentFull();
