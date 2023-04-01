@@ -14,10 +14,10 @@ const NavigationSidebar = (
                     <span className="d-none d-xl-inline ps-1">
                         Tuiter</span>
                 </button>
-                <a href="/tuiter/home" className="text-decoration-none">
+                <a href="/tuiter" className="text-decoration-none">
                     <Button active={active} title="Home" icon="fa fa-home"/>
                 </a>
-                <a href="/tuiter" className="text-decoration-none">
+                <a href="/tuiter/explore" className="text-decoration-none">
                     <Button active={active} title="Explore" icon="fa fa-hashtag"/>
                 </a>
                 <Button active={active} title="Labs" icon="fa fa-asterisk"/>

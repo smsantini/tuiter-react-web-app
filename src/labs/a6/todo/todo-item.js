@@ -1,6 +1,7 @@
 const TodoItem = (
     {
         todo = {
+            key: 123,
             done: true,
             title: 'Buy milk',
             status: 'COMPLETED'

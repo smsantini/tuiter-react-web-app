@@ -1,7 +1,7 @@
 import React from "react";
-import LikedElement from "./liked-element.js";
+import TuitStats from "./tuit-stats.js";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 const TuitItem = (
     {
         tuit = {
@@ -22,7 +22,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item">
@@ -39,23 +39,7 @@ const TuitItem = (
                         {tuit.handle} · {tuit.time}
                     </div>
                     <div>{tuit.tuit}</div>
-                    <div className="d-flex justify-content-start">
-                        <span className="col-3">
-                            <i className="fa fa-comment-o pe-2"></i>
-                            {tuit.replies}
-                        </span>
-                        <span className="col-3">
-                            <i className="fa fa-refresh pe-2"></i>
-                            {tuit.retuits}
-                        </span>
-                        <span className="col-3">
-                            <LikedElement liked={tuit.liked}/>
-                            {tuit.likes}
-                        </span>
-                        <span className="col-3">
-                            <i className="fa fa-share-alt pe-2"></i>
-                        </span>
-                    </div>
+                    <TuitStats id={tuit._id} liked={tuit.liked} likes={tuit.likes} replies={tuit.replies} retuits={tuit.retuits}/>
                 </div>
             </div>
         </li>

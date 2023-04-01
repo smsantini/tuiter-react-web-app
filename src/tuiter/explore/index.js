@@ -1,45 +1,34 @@
 import React from "react";
-import PostSummaryList from "../post-summary-list/index.js";
-import "./index.css";
-const ExploreComponent = () => {
+import NavigationSidebar
+    from "../navigation-sidebar/index.js";
+import WhoToFollowList from "../who-to-follow-list/index.js";
+import ExploreComponent from "../explore-component/index.js";
+import whoReducer
+    from "../reducers/who-reducer.js";
+import tuitsReducer from "../tuits/tuits-reducer.js";
+import { configureStore }
+    from '@reduxjs/toolkit';
+import {Provider} from "react-redux";
+const store = configureStore(
+    {reducer: {
+        who: whoReducer,
+        tuitsData: tuitsReducer}});
+function Tuiter() {
     return(
-        <>
-            <div className="row">
-                <div className="col-11 position-relative">
-                    <input placeholder="Search Tuiter"
-                           className="form-control rounded-pill ps-5"/>
-                    <i className="bi bi-search position-absolute
-                       wd-nudge-up"></i>
+        <Provider store={store}>
+            <div className="row mt-2">
+                <div className="col-2 col-md-2 col-lg-1 col-xl-2">
+                    <NavigationSidebar active="Explore"/>
                 </div>
-                <div className="col-1">
-                    <i className="wd-bottom-4 text-primary float-end bi
-                       bi-gear-fill fs-2 position-relative"></i>
+                <div className="col-10 col-md-10 col-lg-7 col-xl-6"
+                     style={{"position": "relative"}}>
+                    <ExploreComponent/>
+                </div>
+                <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+                    <WhoToFollowList/>
                 </div>
             </div>
-            <ul className="nav nav-pills mb-2">
-                <li className="nav-item">
-                    <button className="nav-link active">For You</button>
-                </li>
-                <li className="nav-item">
-                    <button className="nav-link">Trending</button>
-                </li>
-                <li className="nav-item">
-                    <button className="nav-link">News</button>
-                </li>
-                <li className="nav-item">
-                    <button className="nav-link">Sports</button>
-                </li>
-                <li className="nav-item">
-                    <button className="nav-link d-none d-md-grid">Entertainment</button>
-                </li>
-            </ul>
-            <div className="position-relative mb-2">
-                <img src="/images/starship.webp" alt="starship" className="w-100"/>
-                <h1 className="position-absolute wd-nudge-up text-white">
-                    SpaceX Starship</h1>
-            </div>
-            <PostSummaryList/>
-        </>
+        </Provider>
     );
-};
-export default ExploreComponent;
+}
+export default Tuiter
