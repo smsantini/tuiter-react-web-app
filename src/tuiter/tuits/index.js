@@ -8,7 +8,7 @@ const TuitsList = () => {
         state => state.tuitsData)
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(findTuitsThunk())}, [dispatch])
+        dispatch(findTuitsThunk())}, [])
     return(
         <ul className="list-group">
             {
