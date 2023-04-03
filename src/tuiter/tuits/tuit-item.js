@@ -28,7 +28,7 @@ const TuitItem = (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-auto">
-                    <img alt="tuit logo" height={48} className="rounded-circle" src={`/images/${tuit.image}`}/>
+                    <img alt="tuit logo" height={48} width={48} className="rounded-circle" src={`/images/${tuit.image}`}/>
                 </div>
                 <div className="col-10">
                     <div>
