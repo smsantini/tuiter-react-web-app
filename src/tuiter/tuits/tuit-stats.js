@@ -26,7 +26,7 @@ const TuitStats = (
             <span className="col-3" onClick={() => dispatch(updateTuitThunk({
                     ...tuit,
                     likes: tuit.likes + 1,
-                    liked: !tuit.liked
+                    liked: true
                 }))}>
                 <LikedElement liked={tuit.liked}/>
                 {tuit.likes}
