@@ -1,6 +1,9 @@
 import React from "react";
 
-const LikedElement = (liked = false) => {
+const LikedElement = (
+    {
+        liked = false
+    }) => {
     if(liked.liked) {
         return (<i className="fa fa-heart text-danger pe-2"></i>);
     } else {
