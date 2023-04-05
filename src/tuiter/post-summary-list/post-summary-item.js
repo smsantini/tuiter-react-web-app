@@ -26,7 +26,7 @@ const PostSummaryItem = (
                     <div>{tuit.title}</div>
                 </div>
                 <div className="col-2">
-                    <img alt="post logo" width={70} className="float-end rounded-3" src={`/images/${tuit.image}`}/>
+                    <img alt="post logo" width={70} className="float-end rounded-3" src={`/images/spaceX-logo.png`}/>
                 </div>
             </div>
         </li>

@@ -1,15 +1,14 @@
 import React, {useEffect} from "react";
-import PostSummaryItem
-    from "./post-summary-item.js";
+import PostSummaryItem from "./post-summary-item.js";
 import {useDispatch, useSelector} from "react-redux";
-import {findTuitsThunk} from "../../services/tuits-thunks";
-
+import {findTuitsThunk}
+    from "../../services/tuits-thunks";
 const PostSummaryList = () => {
-    const {tuits, loading} = useSelector(state => state.tuitsData)
+    const {tuits, loading} = useSelector(
+        state => state.tuitsData)
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(findTuitsThunk())
-    }, [dispatch])
+        dispatch(findTuitsThunk())}, [dispatch])
     return(
         <ul className="list-group">
             {

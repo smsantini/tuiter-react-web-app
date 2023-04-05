@@ -1,14 +1,13 @@
 import React from "react";
-import NavigationSidebar
-    from "./navigation-sidebar/index.js";
+import NavigationSidebar from "./navigation-sidebar/index.js";
 import WhoToFollowList from "./who-to-follow-list/index.js";
+import WhatsHappening from "./whats-happening/whats-happening";
 import whoReducer
     from "./reducers/who-reducer.js";
 import tuitsReducer from "./tuits/tuits-reducer.js";
 import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import WhatsHappening from "./whats-happening/whats-happening";
 import TuitsList from "./tuits";
 const store = configureStore(
     {reducer: {

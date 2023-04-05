@@ -1,6 +1,5 @@
 import React from "react";
-import NavigationSidebar
-    from "../navigation-sidebar/index.js";
+import NavigationSidebar from "../navigation-sidebar/index.js";
 import WhoToFollowList from "../who-to-follow-list/index.js";
 import ExploreComponent from "../explore-component/index.js";
 import whoReducer
@@ -9,6 +8,7 @@ import tuitsReducer from "../tuits/tuits-reducer.js";
 import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+
 const store = configureStore(
     {reducer: {
         who: whoReducer,
